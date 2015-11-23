@@ -1,0 +1,6 @@
+framework module Pods_SJSU_Map {
+  umbrella header "Pods-SJSU Map-umbrella.h"
+
+  export *
+  module * { export * }
+}

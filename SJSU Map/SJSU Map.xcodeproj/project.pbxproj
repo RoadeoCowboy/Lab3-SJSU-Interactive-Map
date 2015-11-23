@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA4218F25E75539EFDB3682 /* Pods_SJSU_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E4055EB40812139C906236 /* Pods_SJSU_Map.framework */; };
+		6D08A3611BF7142900CA4555 /* YuhBldgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A3601BF7142900CA4555 /* YuhBldgViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6D08A3631BF717EF00CA4555 /* SuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A3621BF717EF00CA4555 /* SuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6D08A3651BF71A9800CA4555 /* BBCBldgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A3641BF71A9800CA4555 /* BBCBldgViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6D08A3671BF71E0600CA4555 /* SPGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A3661BF71E0500CA4555 /* SPGViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6D08A36C1BF721F500CA4555 /* bbc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D08A3681BF721F500CA4555 /* bbc.jpg */; settings = {ASSET_TAGS = (); }; };
+		6D08A36D1BF721F500CA4555 /* SPG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D08A3691BF721F500CA4555 /* SPG.jpg */; settings = {ASSET_TAGS = (); }; };
+		6D08A36E1BF721F500CA4555 /* SU.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D08A36A1BF721F500CA4555 /* SU.jpg */; settings = {ASSET_TAGS = (); }; };
+		6D08A36F1BF721F500CA4555 /* yuh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D08A36B1BF721F500CA4555 /* yuh.jpg */; settings = {ASSET_TAGS = (); }; };
 		6D194D161BF1CA0600762B48 /* KingLibrary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D194D151BF1CA0600762B48 /* KingLibrary.jpg */; settings = {ASSET_TAGS = (); }; };
+		6D19B8FE1BF2B86100BB7642 /* KingLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19B8FD1BF2B86100BB7642 /* KingLibraryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6D19B9001BF4410900BB7642 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D19B8FF1BF4410900BB7642 /* CoreLocation.framework */; };
+		6D19B9021BF4639B00BB7642 /* Circles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19B9011BF4639B00BB7642 /* Circles.swift */; settings = {ASSET_TAGS = (); }; };
 		6D1F72B51BE702CF002925C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F72B41BE702CF002925C1 /* AppDelegate.swift */; };
 		6D1F72B71BE702CF002925C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F72B61BE702CF002925C1 /* ViewController.swift */; };
 		6D1F72BA1BE702CF002925C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F72B81BE702CF002925C1 /* Main.storyboard */; };
@@ -37,7 +49,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31E4055EB40812139C906236 /* Pods_SJSU_Map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJSU_Map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643EFAC97CC668F41C18DFCE /* Pods-SJSU Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJSU Map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJSU Map/Pods-SJSU Map.debug.xcconfig"; sourceTree = "<group>"; };
+		6D08A3601BF7142900CA4555 /* YuhBldgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuhBldgViewController.swift; sourceTree = "<group>"; };
+		6D08A3621BF717EF00CA4555 /* SuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuViewController.swift; sourceTree = "<group>"; };
+		6D08A3641BF71A9800CA4555 /* BBCBldgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBCBldgViewController.swift; sourceTree = "<group>"; };
+		6D08A3661BF71E0500CA4555 /* SPGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPGViewController.swift; sourceTree = "<group>"; };
+		6D08A3681BF721F500CA4555 /* bbc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bbc.jpg; sourceTree = "<group>"; };
+		6D08A3691BF721F500CA4555 /* SPG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SPG.jpg; sourceTree = "<group>"; };
+		6D08A36A1BF721F500CA4555 /* SU.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SU.jpg; sourceTree = "<group>"; };
+		6D08A36B1BF721F500CA4555 /* yuh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yuh.jpg; sourceTree = "<group>"; };
 		6D194D151BF1CA0600762B48 /* KingLibrary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KingLibrary.jpg; sourceTree = "<group>"; };
+		6D19B8FD1BF2B86100BB7642 /* KingLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingLibraryViewController.swift; sourceTree = "<group>"; };
+		6D19B8FF1BF4410900BB7642 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6D19B9011BF4639B00BB7642 /* Circles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circles.swift; sourceTree = "<group>"; };
 		6D1F72B11BE702CF002925C1 /* SJSU Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SJSU Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1F72B41BE702CF002925C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1F72B61BE702CF002925C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +78,7 @@
 		6D1F72D61BE702CF002925C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D1F72E61BEDB30A002925C1 /* EngBldgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngBldgViewController.swift; sourceTree = "<group>"; };
 		6D1F735C1BEDF15F002925C1 /* coe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coe.jpg; sourceTree = "<group>"; };
+		CEFC744B0D6CC41C4375244E /* Pods-SJSU Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJSU Map.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJSU Map/Pods-SJSU Map.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D19B9001BF4410900BB7642 /* CoreLocation.framework in Frameworks */,
+				1DA4218F25E75539EFDB3682 /* Pods_SJSU_Map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +108,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50877A1E39A25BA5E8A2AD98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31E4055EB40812139C906236 /* Pods_SJSU_Map.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D1F72A81BE702CF002925C1 = {
 			isa = PBXGroup;
 			children = (
+				6D19B8FF1BF4410900BB7642 /* CoreLocation.framework */,
 				6D1F72B31BE702CF002925C1 /* SJSU Map */,
 				6D1F72C81BE702CF002925C1 /* SJSU MapTests */,
 				6D1F72D31BE702CF002925C1 /* SJSU MapUITests */,
 				6D1F72B21BE702CF002925C1 /* Products */,
+				9018DF1D060B1E55E7873540 /* Pods */,
+				50877A1E39A25BA5E8A2AD98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,13 +144,23 @@
 			children = (
 				6D194D151BF1CA0600762B48 /* KingLibrary.jpg */,
 				6D1F72B41BE702CF002925C1 /* AppDelegate.swift */,
+				6D08A3641BF71A9800CA4555 /* BBCBldgViewController.swift */,
+				6D08A3681BF721F500CA4555 /* bbc.jpg */,
+				6D08A3691BF721F500CA4555 /* SPG.jpg */,
+				6D08A36A1BF721F500CA4555 /* SU.jpg */,
+				6D08A36B1BF721F500CA4555 /* yuh.jpg */,
+				6D08A3601BF7142900CA4555 /* YuhBldgViewController.swift */,
+				6D08A3661BF71E0500CA4555 /* SPGViewController.swift */,
+				6D08A3621BF717EF00CA4555 /* SuViewController.swift */,
 				6D1F72B61BE702CF002925C1 /* ViewController.swift */,
+				6D19B9011BF4639B00BB7642 /* Circles.swift */,
 				6D1F72B81BE702CF002925C1 /* Main.storyboard */,
 				6D1F72BB1BE702CF002925C1 /* Assets.xcassets */,
 				6D1F735C1BEDF15F002925C1 /* coe.jpg */,
 				6D1F72BD1BE702CF002925C1 /* LaunchScreen.storyboard */,
 				6D1F72C01BE702CF002925C1 /* Info.plist */,
 				6D1F72E61BEDB30A002925C1 /* EngBldgViewController.swift */,
+				6D19B8FD1BF2B86100BB7642 /* KingLibraryViewController.swift */,
 			);
 			path = "SJSU Map";
 			sourceTree = "<group>";
@@ -134,6 +183,15 @@
 			path = "SJSU MapUITests";
 			sourceTree = "<group>";
 		};
+		9018DF1D060B1E55E7873540 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				643EFAC97CC668F41C18DFCE /* Pods-SJSU Map.debug.xcconfig */,
+				CEFC744B0D6CC41C4375244E /* Pods-SJSU Map.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D1F72D91BE702CF002925C1 /* Build configuration list for PBXNativeTarget "SJSU Map" */;
 			buildPhases = (
+				3E21A3E7E4261E1898C5A09D /* Check Pods Manifest.lock */,
 				6D1F72AD1BE702CF002925C1 /* Sources */,
 				6D1F72AE1BE702CF002925C1 /* Frameworks */,
 				6D1F72AF1BE702CF002925C1 /* Resources */,
+				873EE032D95D54B178169F68 /* Embed Pods Frameworks */,
+				87B2B0F56281AC7F814A1DD8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,9 +301,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D08A36F1BF721F500CA4555 /* yuh.jpg in Resources */,
 				6D1F72BF1BE702CF002925C1 /* LaunchScreen.storyboard in Resources */,
 				6D1F735D1BEDF15F002925C1 /* coe.jpg in Resources */,
 				6D194D161BF1CA0600762B48 /* KingLibrary.jpg in Resources */,
+				6D08A36D1BF721F500CA4555 /* SPG.jpg in Resources */,
+				6D08A36C1BF721F500CA4555 /* bbc.jpg in Resources */,
+				6D08A36E1BF721F500CA4555 /* SU.jpg in Resources */,
 				6D1F72BC1BE702CF002925C1 /* Assets.xcassets in Resources */,
 				6D1F72BA1BE702CF002925C1 /* Main.storyboard in Resources */,
 			);
@@ -264,14 +329,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E21A3E7E4261E1898C5A09D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		873EE032D95D54B178169F68 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJSU Map/Pods-SJSU Map-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B2B0F56281AC7F814A1DD8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJSU Map/Pods-SJSU Map-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D1F72AD1BE702CF002925C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6D1F72E71BEDB30A002925C1 /* EngBldgViewController.swift in Sources */,
+				6D08A3671BF71E0600CA4555 /* SPGViewController.swift in Sources */,
+				6D08A3631BF717EF00CA4555 /* SuViewController.swift in Sources */,
 				6D1F72B71BE702CF002925C1 /* ViewController.swift in Sources */,
 				6D1F72B51BE702CF002925C1 /* AppDelegate.swift in Sources */,
+				6D19B8FE1BF2B86100BB7642 /* KingLibraryViewController.swift in Sources */,
+				6D08A3651BF71A9800CA4555 /* BBCBldgViewController.swift in Sources */,
+				6D08A3611BF7142900CA4555 /* YuhBldgViewController.swift in Sources */,
+				6D19B9021BF4639B00BB7642 /* Circles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +528,7 @@
 		};
 		6D1F72DA1BE702CF002925C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643EFAC97CC668F41C18DFCE /* Pods-SJSU Map.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -422,6 +542,7 @@
 		};
 		6D1F72DB1BE702CF002925C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFC744B0D6CC41C4375244E /* Pods-SJSU Map.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

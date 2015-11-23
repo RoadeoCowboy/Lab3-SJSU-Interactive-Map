@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--SJSU Interactive Map-->
@@ -18,14 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6Zu-Si-qEz">
+                            <searchBar contentMode="redraw" misplaced="YES" placeholder="Please Enter Building" translatesAutoresizingMaskIntoConstraints="NO" id="6Zu-Si-qEz">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="SY7-TL-p94"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ik3-ZK-txh"/>
+                                </connections>
                             </searchBar>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campusmap" translatesAutoresizingMaskIntoConstraints="NO" id="xhn-Sd-dAO">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="campusmap" translatesAutoresizingMaskIntoConstraints="NO" id="xhn-Sd-dAO">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -34,40 +36,39 @@
                                     <outletCollection property="gestureRecognizers" destination="TZR-zN-rGS" appends="YES" id="8TP-Wy-XcP"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJC-IV-spj">
-                                <rect key="frame" x="198" y="236" width="46" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="Wjm-OK-p0j"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhd-My-xnC">
-                                <rect key="frame" x="31" y="221" width="46" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="Ehh-5V-lwu"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rdN-RG-d3t" kind="show" identifier="KingSegue" id="QCe-xI-rqc"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6CR-7b-p4M">
+                                <rect key="frame" x="20" y="312" width="44" height="71"/>
+                                <color key="backgroundColor" red="0.34637009274049979" green="0.42777486455400193" blue="1" alpha="0.57000000000000006" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4jP-wc-GSw">
+                                <rect key="frame" x="146" y="205" width="51" height="72"/>
+                                <color key="backgroundColor" red="0.34637009270000002" green="0.42777486460000003" blue="1" alpha="0.56999999999999995" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qgn-01-EIi">
+                                <rect key="frame" x="65" y="489" width="49" height="43"/>
+                                <color key="backgroundColor" red="0.34637009270000002" green="0.42777486460000003" blue="1" alpha="0.56999999999999995" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-GR-H57">
+                                <rect key="frame" x="176" y="257" width="77" height="37"/>
+                                <color key="backgroundColor" red="0.34637009270000002" green="0.42777486460000003" blue="1" alpha="0.56999999999999995" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlb-MI-ced">
+                                <rect key="frame" x="271" y="240" width="44" height="37"/>
+                                <color key="backgroundColor" red="0.34637009270000002" green="0.42777486460000003" blue="1" alpha="0.56999999999999995" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zal-RF-VvL">
+                                <rect key="frame" x="171" y="532" width="73" height="46"/>
+                                <color key="backgroundColor" red="0.34637009270000002" green="0.42777486460000003" blue="1" alpha="0.56999999999999995" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Zu-Si-qEz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="C10-eC-L2M"/>
                             <constraint firstItem="6Zu-Si-qEz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HWP-rF-wMJ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JJC-IV-spj" secondAttribute="bottom" constant="356" id="SEO-G0-Rn6"/>
                             <constraint firstItem="6Zu-Si-qEz" firstAttribute="trailing" secondItem="xhn-Sd-dAO" secondAttribute="trailing" id="TAO-pV-mAk"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vhd-My-xnC" secondAttribute="bottom" constant="362" id="TUi-1a-96y"/>
                             <constraint firstItem="xhn-Sd-dAO" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="VPi-vg-Gcw"/>
-                            <constraint firstAttribute="trailing" secondItem="JJC-IV-spj" secondAttribute="trailing" constant="131" id="aem-TP-pnD"/>
                             <constraint firstAttribute="trailing" secondItem="6Zu-Si-qEz" secondAttribute="trailing" id="eZb-WC-52L"/>
-                            <constraint firstItem="Vhd-My-xnC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="uAJ-7E-jvp"/>
                             <constraint firstItem="xhn-Sd-dAO" firstAttribute="top" secondItem="6Zu-Si-qEz" secondAttribute="bottom" id="uxs-oL-sJ7"/>
                             <constraint firstItem="6Zu-Si-qEz" firstAttribute="leading" secondItem="xhn-Sd-dAO" secondAttribute="leading" id="yze-VW-h6R"/>
                         </constraints>
@@ -77,6 +78,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="SJSU Interactive Map" id="ezT-Ly-gxa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bbcRect" destination="Rlb-MI-ced" id="cgW-Vf-1dY"/>
+                        <outlet property="engRect" destination="4jP-wc-GSw" id="22I-3T-14o"/>
+                        <outlet property="kingRect" destination="6CR-7b-p4M" id="N48-F1-c44"/>
+                        <outlet property="searchBar2" destination="6Zu-Si-qEz" id="L08-AZ-bXK"/>
+                        <outlet property="spgRect" destination="Zal-RF-VvL" id="85H-Sg-IqZ"/>
+                        <outlet property="suRect" destination="Eno-GR-H57" id="bFN-ca-tKG"/>
+                        <outlet property="yuhRect" destination="Qgn-01-EIi" id="cmO-Qk-k3x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="agy-ev-Qup">
@@ -95,43 +105,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="662.5" y="391.5"/>
-        </scene>
-        <!--King Detail Scene-->
-        <scene sceneID="vDo-PY-CPU">
-            <objects>
-                <viewController title="King Detail Scene" id="rdN-RG-d3t" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="W0U-FK-rik"/>
-                        <viewControllerLayoutGuide type="bottom" id="yVD-fR-qUv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VKv-bc-yUT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJV-rY-CrW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="King Library" id="EYc-M5-G1A">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="dcr-vL-v1E">
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="L47-gg-CBn"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KingLibrary.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cKM-q0-sA3">
-                                <rect key="frame" x="0.0" y="44" width="375" height="200"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Orc-rH-yEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1202.5" y="64.5"/>
+            <point key="canvasLocation" x="712.5" y="391.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8e7-eD-yHF">
@@ -153,10 +127,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KingLibrary.jpg" width="480" height="360"/>
-        <image name="campusmap" width="660" height="694"/>
+        <image name="campusmap" width="707" height="707"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="L47-gg-CBn"/>
-    </inferredMetricsTieBreakers>
 </document>
